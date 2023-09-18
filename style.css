@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:black;
+    color: #fff;            
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/perfect.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+/*-------------about--------- */
+#about{
+    padding:80px 0 ;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    margin-bottom: 10px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.education{
+    flex-basis: 50%;
+    border: 1px solid white;
+    background-color: antiquewhite;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.skills{
+    flex-basis: 40%;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.hobbies{
+    flex-basis: 40%;
+    border: 1px solid white;
+    background-color: aliceblue;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.hobbies:hover, .skills:hover,.education:hover{
+    background-color: aqua;
+    font-style: italic;
+    font-size: large;
+}
+/* project */
+#projects h1 {
+    text-align: center;
+}
+.project-container{
+    background: darkcyan;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.project-container p{
+    color: black;
+}
+.project-container h3{
+    text-align: center;
+
+}
+#img-alt img{
+    width: 300px;
+}
+.project-content-1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.google-clone{
+    flex-basis: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.birthday-site{
+    flex-basis: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.Hometown{
+    flex-basis: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.project-content-2{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.black-jack{
+    flex-basis: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.url-shortener{
+    flex-basis: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.portifolio{
+    flex-basis: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.black-jack:hover{
+    background-color: aqua;
+    font-style: italic;
+    font-weight: bolder;
+}
+.url-shortener:hover{
+    background-color: aqua;
+    font-style: italic;
+    font-weight: bolder;
+}
+.portifolio:hover{
+    background-color: aqua;
+    font-style: italic;
+    font-weight: bolder;
+}
+.Hometown:hover{
+    background-color: aqua;
+    font-style: italic;
+    font-weight: bolder;
+}
+.birthday-site:hover{
+    background-color: aqua;
+    font-style: italic;
+    font-weight: bolder;
+}
+.google-clone:hover{
+    background-color: aqua;
+    font-style: italic;
+    font-weight: bolder;
+}
+/* contact */
+#contact h1{
+    text-align: center;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    border: 1px solid white;
+    border-radius: 30px;
+    background: linear-gradient(to right, green,lightblue);
+}
+form{
+    width: 50%;
+}
+input{
+    margin: 10px;
+    height: 30px;
+}
+textarea{
+    margin-bottom: 15px;
+}
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
+    background: aqua;
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+    margin-bottom: 10px;
+}
+button:hover{
+    font-style: italic;
+    font-weight: bolder;
+    background: #ababab;
+}
+.footer{
+    text-align: center;
+}
